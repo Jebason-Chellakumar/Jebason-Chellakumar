@@ -13,6 +13,7 @@ I design and run production platforms on AWS. My recent work: lakehouses that br
 |---|---|---|
 | **[aws-medallion-lakehouse](https://github.com/Jebason-Chellakumar/aws-medallion-lakehouse)** | Multi-tenant CDC lakehouse: replicates many source databases with DMS and merges every change into Bronze/Silver/Gold Iceberg tables. Handles deletes, replays, schema drift and Glue concurrency limits, and runs locally on DuckDB with 42 tests | DMS · S3 · Glue (PySpark) · Apache Iceberg · Athena · Step Functions · CloudFormation |
 | **[finops-agent](https://github.com/Jebason-Chellakumar/finops-agent)** | Multi-agent FinOps assistant: an orchestrator sends specialist agents to analyse AWS spend in parallel, finding anomalies, idle non-prod resources and untagged spend. Every number comes from a tested analysis engine | Python · Claude API · multi-agent tool use · AWS Cost Explorer |
+| **[bedrock-rag-translator](https://github.com/Jebason-Chellakumar/bedrock-rag-translator)** | Retrieval-augmented translation into many languages that stays consistent with approved past translations and the glossary. Placeholders are masked so they never break, every segment gets automatic QA with self-correction, and real problems go to a human review queue. Runs as a CLI or an S3-triggered Lambda | Amazon Bedrock (Claude, Titan embeddings) · FAISS · Lambda · SAM |
 
 ### 🏗️ What I've built at work
 
