@@ -1,7 +1,7 @@
 # Hi, I'm Jebason Chellakumar 👋
 
 **Cloud Solutions Architect** · AWS · Data Engineering · GenAI & Multi-Agent Systems · DevOps · Cloud Security
-📍 Chennai, India · 🏅 AWS Certified Solutions Architect – Associate · 💼 Open to new roles
+📍 Chennai, India · 🏅 AWS Certified Solutions Architect – Associate
 
 I design and run production platforms on AWS. My recent work: lakehouses that bring hundreds of databases into one analytics platform, serverless event-driven backends, CI/CD with security scanning built in, and LLM agents that automate real business workflows.
 
@@ -49,5 +49,3 @@ I design and run production platforms on AWS. My recent work: lakehouses that br
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jebason-chellakumar)
 [![Email](https://img.shields.io/badge/jebasonchellakumar%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:jebasonchellakumar@gmail.com)
-
-Open to **Cloud Architect · Senior Cloud Engineer · Data Platform · AI Platform** roles, in Chennai or remote.
