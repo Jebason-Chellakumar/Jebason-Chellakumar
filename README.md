@@ -22,7 +22,9 @@ I design and run production platforms on AWS. My recent work: lakehouses that br
 - **GenAI / RAG.** I built a RAG translation assistant for multilingual content and an in-app image-generation feature, using Amazon Bedrock, LangChain and FAISS.
 - **CI/CD & security ownership.** I own CI/CD and security across a multi-account AWS Organization (Control Tower, IAM Identity Center, SCPs), covering dev, QA, UAT and production in four regions. Releases move branch by branch through CodePipeline, CodeBuild and CodeDeploy, gated by gitleaks secret scanning and SonarQube quality checks, with governance through AWS Config, CloudTrail and CloudWatch.
 - **Serverless & DevOps.** I built Lambda / API Gateway / Step Functions workflows, and pipelines with GitHub Actions, SAM, Serverless Framework and Docker/ECR for Python, Node.js, TypeScript and React Native apps.
-- **Reliability & security.** I resolved production incidents (RDS connection saturation, RDS Proxy pooling limits, AZ capacity) and added AppScan DAST, MobSF and Trivy to delivery pipelines. I've also hardened environments with IAM, WAF, GuardDuty, CloudTrail and Secrets Manager.
+- **Reliability.** I traced an RDS Proxy connection spike (20 → 278 connections) to EventBridge schedules firing at the same time. I also run disaster-recovery drills for RDS when an Availability Zone fails, and I've resolved RDS saturation and AZ capacity incidents.
+- **Security automation.** I automated IAM access-key rotation with no downtime (Lambda, Secrets Manager), set up GuardDuty alerts graded by severity (EventBridge, SNS), and run Scout Suite security scans across all accounts on demand. I also run API DAST with Wapiti and Nikto, patch EC2 with SSM Patch Manager, and enforce CDK permission boundaries, on top of AppScan, MobSF, Trivy and WAF.
+- **FinOps.** I cut the EC2 fleet by 40% in six months by moving workloads to serverless, resized the Savings Plan from 25 to 10 instances, and set budgets per organizational unit.
 - **Mentoring.** I designed project tracks for cloud and AI interns: RAG chatbots, cost intelligence and agentic AI.
 
 ### 🛠️ Tech stack
@@ -39,11 +41,11 @@ I design and run production platforms on AWS. My recent work: lakehouses that br
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
 
-- **AWS:** Organizations · Control Tower · IAM Identity Center · EC2 · ECS · ECR · Lambda · API Gateway · Step Functions · S3 · RDS · DynamoDB · DocumentDB · VPC · IAM · CloudFormation · SAM · CloudWatch · Glue · Athena · DMS · Redshift · Bedrock · WAF · GuardDuty · Config · CloudTrail
+- **AWS:** Organizations · Control Tower · IAM Identity Center · EC2 · ECS · ECR · Lambda · API Gateway · Step Functions · S3 · RDS · DynamoDB · DocumentDB · VPC · IAM · CloudFormation · SAM · CloudWatch · Glue · Athena · DMS · Redshift · Bedrock · WAF · GuardDuty · Config · CloudTrail · EventBridge · SSM Patch Manager
 - **Data:** Glue/PySpark · Apache Iceberg · SQLMesh · CDC · medallion architecture · Parquet
 - **AI:** Amazon Bedrock · Claude · LangChain · RAG · FAISS · multi-agent systems
 - **DevSecOps:** CodePipeline · CodeBuild · CodeDeploy · GitHub Actions · gitleaks · SonarQube · Trivy
-- **Security:** IAM · SCPs · WAF · GuardDuty · CloudTrail · HCL AppScan · MobSF · Trivy
+- **Security:** IAM · SCPs · WAF · GuardDuty · CloudTrail · Secrets Manager · Scout Suite · HCL AppScan · MobSF · Trivy · Wapiti · Nikto
 
 ### 📫 Get in touch
 
